@@ -1,0 +1,6 @@
+pygame.init()
+ecran = pygame.display.set_mode((0,0))
+image_fond = pygame.image.load("fondherbe.png") #on definit le fond d'écran
+nouvelle_image = pygame.transform.scale(image_fond, (2000, 1200)) #et on le met à la taille de l'écran
+ecran.blit(nouvelle_image,(0,0))
+pygame.display.flip()
